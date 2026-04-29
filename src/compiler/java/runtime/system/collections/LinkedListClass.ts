@@ -15,7 +15,7 @@ import { ComparatorInterface } from "./ComparatorInterface.ts";
 
 export class LinkedListClass extends ObjectClass implements BaseListType {
     static __javaDeclarations: LibraryDeclarations = [
-        { type: "declaration", signature: "class LinkedList<E> implements Deque<E>" },
+        { type: "declaration", signature: "class LinkedList<E> implements List<E>, Deque<E>" },
 
         { type: "method", signature: "LinkedList()", native: LinkedListClass.prototype._constructor, comment: JRC.linkedListConstructorComment },
 
