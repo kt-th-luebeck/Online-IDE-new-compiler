@@ -33,6 +33,14 @@ assertFalse(list.containsAll(list2), "ArrayList.containsAll");
 
 
 /**::
+ * LinkedList assigned to List variable
+ */
+
+List<String> listFromLinkedList = new LinkedList<>();
+listFromLinkedList.add("Test");
+assertEquals(1, listFromLinkedList.size(), "List<String> l = new LinkedList<>() should work.");
+
+/**::
  * LinkedList-functions
  */
 
